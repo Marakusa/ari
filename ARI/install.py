@@ -6,6 +6,7 @@ gitFormat = "https://aur.archlinux.org/{0}.git"
 packageFormat = "https://aur.archlinux.org/packages/{0}";
 
 def search(query):
+	print(f"Starting to install {query}...")
 	giturl = gitFormat.format(query);
 	packageurl = packageFormat.format(query);
 	response = requests.get(packageurl)
