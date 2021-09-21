@@ -18,7 +18,7 @@ echo ""
 
 echo "Creating the binaries..."
 echo "==> '/bin/ari'"
-sudo echo "python /usr/lib/ari/ari.py $1 $2" >> /bin/ari
+sudo cp -fv ARI/ari /bin/ari
 
 echo "Done! (3/5)"
 echo ""
