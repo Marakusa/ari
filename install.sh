@@ -11,6 +11,7 @@ echo "Copying files..."
 sudo cp -fv ARI/ARI.py /usr/lib/ari/ari.py
 sudo cp -fv ARI/arihelp.py /usr/lib/ari/arihelp.py
 sudo cp -fv ARI/install.py /usr/lib/ari/install.py
+sudo cp -fv ARI/commands.json /usr/lib/ari/commands.json
 sudo cp -fv ARI/installpkg.sh /usr/lib/ari/installpkg.sh
 
 echo "Done! (2/5)"
@@ -32,6 +33,7 @@ sudo chmod a+x /usr/lib/ari/ari.py
 sudo chmod a+x /usr/lib/ari/arihelp.py
 sudo chmod a+x /usr/lib/ari/install.py
 sudo chmod a+x /usr/lib/ari/installpkg.sh
+sudo chmod a+x /usr/lib/ari/commands.json
 sudo chmod a+x /bin/ari
 sudo chmod a+x ARI/requirements.sh
 
