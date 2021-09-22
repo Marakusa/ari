@@ -9,6 +9,7 @@ echo ""
 
 echo "Copying files..."
 sudo cp -fv ARI/ARI.py /usr/lib/ari/ari.py
+sudo cp -fv ARI/install.py /usr/lib/ari/install.py
 
 echo "Done! (2/5)"
 echo ""
