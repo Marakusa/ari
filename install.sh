@@ -71,6 +71,6 @@ echo "Installing the requirements..."
 ./ARI/requirements.sh
 
 echo "Done! (5/5)"
-sudo cp -fv ARI/version /usr/lib/ari/version
+sudo cp -f ARI/version /usr/lib/ari/version
 sudo chmod a+r /usr/lib/ari/version
 echo "ARI installed!"
