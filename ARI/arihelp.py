@@ -11,7 +11,7 @@ def listcommands(args):
     columnLen = len(sortedList[0]["full"] + " " + " ".join(sortedList[0]["args"]))
 
     while i < len(commands):
-        commandsList += createColumn(commands[i]["short"], 4) + " " + createColumn(commands[i]["full"] + " " + commands[i]["args"].join(" "), columnLen + 4) + " " + commands[i]["description"]
+        commandsList += createColumn(commands[i]["short"], 4) + " " + createColumn(commands[i]["full"] + " " + " ".join(commands[i]["args"]), columnLen + 4) + " " + commands[i]["description"]
         i += 1
 
     return commandsList
