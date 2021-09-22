@@ -1,3 +1,4 @@
+![ari](https://user-images.githubusercontent.com/29477753/134324182-bf706f19-0dfa-4528-a64f-4867a601561c.png)
 # Arch Repository Installer (ARI)
 Arch Repository Installer installs packages from AUR quikcly and easily.
 
