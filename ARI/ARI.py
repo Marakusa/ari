@@ -30,4 +30,4 @@ else:
 		i += 1
 
 	if done == 0:
-		print(f"Unknown command {sys.argv[1]}")
+		print(f"Unknown command {sys.argv[1]}. Use h or help for the list of all commands")
