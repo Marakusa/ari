@@ -33,4 +33,4 @@ else:
 		print(f"Unknown command {sys.argv[1]}. Use h or help for the list of all commands")
 
 def version(args):
-	print("ARI v" + open("version").read())
+	print("ARI v" + open("/usr/lib/ari/version", "r").read())
