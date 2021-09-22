@@ -16,8 +16,8 @@ def version(args):
 commands = json.loads(open("/usr/lib/ari/commands.json", "r").read())
 functions = [install, listcommands, checkupdates, version]
 
-if len(sys.argv) == 1:
-	print('Invalid usage. Please use arguments help or -h for more information.')
+if len(sys.argv) <= 1:
+	print(f"No command given. Please use h or help for the list of all commands")
 else:
 	done = 0
 	i = 0
@@ -33,4 +33,4 @@ else:
 		i += 1
 
 	if done == 0:
-		print(f"Unknown command {sys.argv[1]}. Use h or help for the list of all commands")
+		print(f"Unknown command {sys.argv[1]}. Please use h or help for the list of all commands")
