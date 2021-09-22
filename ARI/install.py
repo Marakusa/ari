@@ -6,22 +6,22 @@ gitFormat = "https://aur.archlinux.org/{0}.git"
 packageFormat = "https://aur.archlinux.org/packages/{0}";
 
 def install(args):
-	gitpkg = args[2]
+	pkgname = args[2]
 
-	print(f"Starting to install {gitpkg}...")
+	print(f"Starting to install {pkgname}...")
 
-	giturl = gitFormat.format(gitpkg)
-	packageurl = packageFormat.format(gitpkg)
+	giturl = gitFormat.format(pkgname)
+	packageurl = packageFormat.format(pkgname)
 	response = requests.get(packageurl)
 
 	if response.status_code == 200:
-		print("rm -rf /tmp/ari/" + gitpkg + "/")
-		subprocess.run(["rm", "-rf", "/tmp/ari/" + gitpkg + "/"])
+		print("rm -rf /tmp/ari/" + pkgname + "/")
+		subprocess.run(["rm", "-rf", "/tmp/ari/" + pkgname + "/"])
 
-		print("git clone " + giturl + " /tmp/ari/" + gitpkg)
-		subprocess.run(["git", "clone", giturl, "/tmp/ari/" + gitpkg])
+		print("git clone " + giturl + " /tmp/ari/" + pkgname)
+		subprocess.run(["git", "clone", giturl, "/tmp/ari/" + pkgname])
 
-		print("bash /usr/lib/ari/installpkg.sh /tmp/ari/" + query + "/")
-		subprocess.run(["bash", "/usr/lib/ari/installpkg.sh", "/tmp/ari/" + gitpkg + "/"])
+		print("bash /usr/lib/ari/installpkg.sh /tmp/ari/" + pkgname + "/")
+		subprocess.run(["bash", "/usr/lib/ari/installpkg.sh", "/tmp/ari/" + pkgname + "/"])
 	else:
 		print(f"An error occurred (HTTP Status Code: {response.status_code} - {url})")
