@@ -17,7 +17,7 @@ def install(query):
 		print("git clone " + giturl + " /tmp/ari/" + query)
 		subprocess.run(["git", "clone", giturl, "/tmp/ari/" + query])
 
-		print("/usr/lib/ari/installpkg.sh /tmp/ari/" + query + "/")
-		subprocess.run(["/usr/lib/ari/installpkg.sh", "/tmp/ari/" + query + "/"])
+		print("bash /usr/lib/ari/installpkg.sh /tmp/ari/" + query + "/")
+		subprocess.run(["bash", "/usr/lib/ari/installpkg.sh", "/tmp/ari/" + query + "/"])
 	else:
 		print(f"An error occurred (HTTP Status Code: {response.status_code} - {url})")
