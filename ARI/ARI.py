@@ -29,5 +29,5 @@ else:
 
 		i += 1
 
-		if done == 0:
-			print(f"Unknown command {sys.argv[1]}")
+	if done == 0:
+		print(f"Unknown command {sys.argv[1]}")
