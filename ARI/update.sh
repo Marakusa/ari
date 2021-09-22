@@ -1,6 +1,9 @@
 echo "Checking for updates..."
 
-if [ ! diff /usr/lib/ari/version https://raw.githubusercontent.com/Marakusa/ari/main/ARI/version ]
+content=$(wget https://raw.githubusercontent.com/Marakusa/ari/main/ARI/version -q -O -)
+echo $content
+echo diff /usr/lib/ari/version $content
+if [ ! diff /usr/lib/ari/version $content ]
 then
 	echo "A new update available! Downloading..."
 	git clone https://github.com/Marakusa/ari.git /tmp/ari/ari
