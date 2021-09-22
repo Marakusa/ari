@@ -3,7 +3,7 @@ import io
 
 commands = json.loads(open("/usr/lib/ari/commands.json", "r").read())
 
-def listcommands():
+def listcommands(args):
     commandsList = ""
     i = 0
 
