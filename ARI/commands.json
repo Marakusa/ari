@@ -3,12 +3,14 @@
 		"short": "h",
 		"full": "help",
 		"args": [],
-		"description": "Returns all commands available"
+		"description": "Returns all commands available",
+		"func": 1
 	},
 	{
 		"short": "i",
 		"full": "install",
 		"args": [ "[package]" ],
-		"description": "Find and install packages from AUR"
+		"description": "Find and install packages from AUR",
+		"func": 0
 	}
 ]
