@@ -4,7 +4,7 @@
 #------------------------------------------------------------------------
 
 import sys
-from install import *
+from .install import *
 
 if len(sys.argv) == 1:
 	print('Invalid usage. Please use arguments help or -h for more information.')
