@@ -14,7 +14,7 @@ sudo cp -fv ARI/ARI.py /usr/lib/ari/ari.py
 copied=$((copied + 1))
 
 echo "Copying files ($copied/$copycount)..."
-sudo cp -fv ARI/arihelp.py /usr/lib/ari/arihelp.py
+sudo cp -fv ARI/ariupdate.py /usr/lib/ari/ariupdate.py
 copied=$((copied + 1))
 
 echo "Copying files ($copied/$copycount)..."
@@ -52,6 +52,7 @@ echo ""
 
 echo "Adding permissions..."
 sudo chmod a+x /usr/lib/ari/ari.py
+sudo chmod a+x /usr/lib/ari/ariupdate.py
 sudo chmod a+x /usr/lib/ari/arihelp.py
 sudo chmod a+x /usr/lib/ari/install.py
 sudo chmod a+x /usr/lib/ari/installpkg.sh
