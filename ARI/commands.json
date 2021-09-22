@@ -1,0 +1,14 @@
+[
+	{
+		"short": "h",
+		"full": "help",
+		"args": [],
+		"description": "Returns all commands available"
+	},
+	{
+		"short": "i",
+		"full": "install",
+		"args": [ "[package]" ],
+		"description": "Find and install packages from AUR"
+	}
+]
