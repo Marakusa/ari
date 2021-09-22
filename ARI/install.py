@@ -12,7 +12,7 @@ def search(query):
 	response = requests.get(packageurl)
 	if response.status_code == 200:
 		print("git clone " + giturl)
-		subprocess.run(["git", "clone", giturl])
+		subprocess.run(["git", "clone", giturl, "/tmp/ari"])
 
 		print(["cd " + query + "/"])
 		subprocess.run(["cd", query + "/"])
