@@ -9,7 +9,7 @@ import io
 from arihelp import *
 from install import *
 
-commands = json.loads(open("commands.json", "r").read())
+commands = json.loads(open("/usr/lib/ari/commands.json", "r").read())
 functions = [install, listcommands]
 
 if len(sys.argv) == 1:
