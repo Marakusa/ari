@@ -10,7 +10,7 @@ from arihelp import *
 from install import *
 
 commands = json.loads(open("/usr/lib/ari/commands.json", "r").read())
-functions = [install, listcommands]
+functions = [install, listcommands, checkupdates]
 
 if len(sys.argv) == 1:
 	print('Invalid usage. Please use arguments help or -h for more information.')
@@ -30,3 +30,6 @@ else:
 
 		if done == 0:
 			print(f"Unknown command {sys.argv[1]}")
+
+def checkupdates(args):
+	subprocess.run(["bash", "/usr/lib/ari/update.sh"])

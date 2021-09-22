@@ -12,5 +12,12 @@
 		"args": [ "[package]" ],
 		"description": "Find and install packages from AUR",
 		"func": 0
+	},
+	{
+		"short": "u",
+		"full": "update",
+		"args": [],
+		"description": "Check for ARI updates",
+		"func": 2
 	}
 ]

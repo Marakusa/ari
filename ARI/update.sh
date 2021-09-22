@@ -12,4 +12,6 @@ then
 	sudo chmod a+x install.sh
 	bash ./install.sh
 	sudo rm -rf /tmp/ari/ari
+else
+	echo "You have the latest version ($currentver) installed!"
 fi
