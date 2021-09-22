@@ -7,7 +7,7 @@ def listcommands(args):
     commandsList = ""
     i = 0
 
-    sortedList = sorted(commands, key=lambda x,y: cmp(len(x["full"] + " " + x["args"].join(" ")), len(y["full"] + " " + y["args"].join(" "))))
+    sortedList = sorted(commands, key=lambda x: len(x["full"] + " " + x["args"].join(" ")))
     columnLen = len(sortedList[0]["full"] + " " + sortedList[0]["args"].join(" "))
 
     while i < len(commands):
