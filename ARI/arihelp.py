@@ -20,7 +20,7 @@ def createColumn(value, spaces):
     returnValue = ""
     i = 0
 
-    while i < len(spaces):
+    while i < spaces:
         if i < len(value):
             returnValue += value[i]
         else:
