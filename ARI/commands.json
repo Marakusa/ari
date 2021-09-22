@@ -1,12 +1,5 @@
 [
 	{
-		"short": "h",
-		"full": "help",
-		"args": [],
-		"description": "Returns all commands available",
-		"func": 1
-	},
-	{
 		"short": "i",
 		"full": "install",
 		"args": [ "[package]" ],
@@ -14,10 +7,24 @@
 		"func": 0
 	},
 	{
+		"short": "h",
+		"full": "help",
+		"args": [],
+		"description": "Returns all commands available",
+		"func": 1
+	},
+	{
 		"short": "u",
 		"full": "update",
 		"args": [],
 		"description": "Check for ARI updates",
 		"func": 2
+	},
+	{
+		"short": "v",
+		"full": "version",
+		"args": [],
+		"description": "Returns the current version of ARI installation",
+		"func": 3
 	}
 ]
