@@ -12,9 +12,10 @@ def listcommands(args):
 
     while i < len(commands):
         commandsList += createColumn(commands[i]["short"], 4) + " " + createColumn(commands[i]["full"] + " " + " ".join(commands[i]["args"]), columnLen + 4) + " " + commands[i]["description"]
+        commandsList += "\n"
         i += 1
 
-    return commandsList
+    print(commandsList)
 
 def createColumn(value, spaces):
     returnValue = ""
