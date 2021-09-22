@@ -8,6 +8,7 @@ import json
 import io
 from arihelp import *
 from install import *
+from ariupdate import *
 
 commands = json.loads(open("/usr/lib/ari/commands.json", "r").read())
 functions = [install, listcommands, checkupdates]
@@ -30,6 +31,3 @@ else:
 
 		if done == 0:
 			print(f"Unknown command {sys.argv[1]}")
-
-def checkupdates(args):
-	subprocess.run(["bash", "/usr/lib/ari/update.sh"])

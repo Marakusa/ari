@@ -6,20 +6,38 @@ echo "Done! (1/5)"
 echo ""
 echo ""
 
+copycount = 8
+copied = 1
 
-echo "Copying files (1/7)..."
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/ARI.py /usr/lib/ari/ari.py
-echo "Copying files (2/7)..."
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/arihelp.py /usr/lib/ari/arihelp.py
-echo "Copying files (3/7)..."
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
+sudo cp -fv ARI/arihelp.py /usr/lib/ari/arihelp.py
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/install.py /usr/lib/ari/install.py
-echo "Copying files (4/7)..."
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/commands.json /usr/lib/ari/commands.json
-echo "Copying files (5/7)..."
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/installpkg.sh /usr/lib/ari/installpkg.sh
-echo "Copying files (6/7)..."
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/update.sh /usr/lib/ari/update.sh
-echo "Copying files (7/7)..."
+copied = copied + 1
+
+echo "Copying files ($copied/$copycount)..."
 sudo cp -fv ARI/version /usr/lib/ari/version
 
 echo "Done! (2/5)"
