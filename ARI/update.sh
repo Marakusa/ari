@@ -1,4 +1,4 @@
-currentver=$(wget /usr/lib/ari/version -q -O -)
+currentver=`cat /usr/lib/ari/version`
 
 echo "Current version: $currentver"
 echo "Checking for updates..."
