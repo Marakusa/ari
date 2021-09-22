@@ -10,6 +10,9 @@ from arihelp import *
 from install import *
 from ariupdate import *
 
+def version(args):
+	print("ARI v" + open("/usr/lib/ari/version", "r").read())
+
 commands = json.loads(open("/usr/lib/ari/commands.json", "r").read())
 functions = [install, listcommands, checkupdates, version]
 
@@ -31,6 +34,3 @@ else:
 
 	if done == 0:
 		print(f"Unknown command {sys.argv[1]}. Use h or help for the list of all commands")
-
-def version(args):
-	print("ARI v" + open("/usr/lib/ari/version", "r").read())
