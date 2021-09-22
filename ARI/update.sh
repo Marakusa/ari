@@ -3,7 +3,7 @@ currentver=`cat /usr/lib/ari/version`
 echo "Current version: $currentver"
 echo "Checking for updates..."
 
-newver=$(wget https://raw.githubusercontent.com/Marakusa/ari/main/ARI/version -q -O -)
+newver=$(wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/Marakusa/ari/main/ARI/version -q -O -)
 
 echo "Latest version: $newver"
 
